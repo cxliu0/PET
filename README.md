@@ -12,5 +12,5 @@ International Conference on Computer Vision (ICCV), 2023
 
 <sup>2</sup>The University of Sydney, Australia
 
-[[Paper]](https://arxiv.org/abs/2308.13814) | [Supplementary]
+[[Paper]](https://arxiv.org/abs/2308.13814) | [[Supplementary]](https://drive.google.com/file/d/1WxdtOaEEccYrXuNQTn1k29lFDAetBm63/view?usp=sharing)
 
