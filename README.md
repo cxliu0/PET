@@ -14,3 +14,91 @@ International Conference on Computer Vision (ICCV), 2023
 
 [[Paper]](https://arxiv.org/abs/2308.13814) | [[Supplementary]](https://drive.google.com/file/d/1WxdtOaEEccYrXuNQTn1k29lFDAetBm63/view?usp=sharing)
 
+![PET](teaser.JPG)
+
+## Highlights
+
+We formulate crowd counting as a decomposable point querying process, where sparse input points could split into four new points when necessary. This formulation exhibits many appealing properties:
+
+- *Intuitive*: The input and output are both interpretable and steerable
+  
+- *Generic*: PET is applicable to a number of crowd-related tasks, by simply adjusting the input format
+  
+- *Effective*: PET reports state-of-the-art crowd counting and localization results
+  
+
+## Installation
+
+- Required packages:
+  
+```
+torch
+torchvision
+numpy
+opencv-python
+scipy
+matplotlib
+```
+
+- Install packages:
+
+```
+pip install -r requirements.txt
+```
+
+## Data Preparation
+
+- Download crowd counting datasets, e.g., [ShanghaiTech](https://github.com/desenzhou/ShanghaiTechDataset).
+  
+- We expect the direcory structure to be as follow:
+  
+
+```
+PET
+├── data
+│    ├── ShanghaiTech
+├── datasets
+├── models
+├── ...
+```
+
+- Alternatively, you can define the path of dataset in [datasets/__init__.py](datasets/__init__.py)
+
+## Training
+
+- Download ImageNet pretrained [vgg16_bn](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth), and put it in ```pretrained``` folder. Or you can define your pretrained model path in [models/backbones/vgg.py](models/backbones/vgg.py)
+  
+
+- To train PET on ShanghaiTech PartA, run
+  
+  ```
+  sh train.sh
+  ```
+  
+
+## Evaluation
+
+- Modify [eval.sh](eval.sh)
+  - change ```---resume``` to your local model path
+- Run
+
+```
+sh eval.sh
+```
+
+## Citation
+
+If you find this work helpful for your research, please consider citing:
+
+```
+@InProceedings{liu2023pet,
+  title={Point-Query Quadtree for Crowd Counting, Localization, and More},
+  author={Liu, Chengxin and Lu, Hao and Cao, Zhiguo and Liu, Tongliang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023}
+}
+```
+
+## Acknowlegdement
+
+We thank the authors of [DETR](https://github.com/facebookresearch/detr) and [P2PNet](https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet) for open-sourcing their work.
