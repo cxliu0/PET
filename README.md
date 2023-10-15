@@ -49,9 +49,9 @@ pip install -r requirements.txt
 
 ## Data Preparation
 
-- Download crowd counting datasets, e.g., [ShanghaiTech](https://github.com/desenzhou/ShanghaiTechDataset).
+- Download crowd-counting datasets, e.g., [ShanghaiTech](https://github.com/desenzhou/ShanghaiTechDataset).
   
-- We expect the direcory structure to be as follow:
+- We expect the directory structure to be as follows:
   
 
 ```
@@ -63,12 +63,12 @@ PET
 ├── ...
 ```
 
-- Alternatively, you can define the path of dataset in [datasets/__init__.py](datasets/__init__.py)
+- Alternatively, you can define the path of the dataset in [datasets/__init__.py](datasets/__init__.py)
 
 
 ## Training
 
-- Download ImageNet pretrained [vgg16_bn](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth), and put it in ```pretrained``` folder. Or you can define your pretrained model path in [models/backbones/vgg.py](models/backbones/vgg.py)
+- Download ImageNet pretrained [vgg16_bn](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth), and put it in ```pretrained``` folder. Or you can define your pre-trained model path in [models/backbones/vgg.py](models/backbones/vgg.py)
   
 
 - To train PET on ShanghaiTech PartA, run
@@ -108,7 +108,7 @@ If you find this work helpful for your research, please consider citing:
 This code is for academic purposes only. Contact: Chengxin Liu (cx_liu@hust.edu.cn)
 
 
-## Acknowlegdement
+## Acknowledgement
 
 We thank the authors of [DETR](https://github.com/facebookresearch/detr) and [P2PNet](https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet) for open-sourcing their work.
 
