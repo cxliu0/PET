@@ -46,6 +46,7 @@ matplotlib
 pip install -r requirements.txt
 ```
 
+
 ## Data Preparation
 
 - Download crowd counting datasets, e.g., [ShanghaiTech](https://github.com/desenzhou/ShanghaiTechDataset).
@@ -64,6 +65,7 @@ PET
 
 - Alternatively, you can define the path of dataset in [datasets/__init__.py](datasets/__init__.py)
 
+
 ## Training
 
 - Download ImageNet pretrained [vgg16_bn](https://download.pytorch.org/models/vgg16_bn-6c64b313.pth), and put it in ```pretrained``` folder. Or you can define your pretrained model path in [models/backbones/vgg.py](models/backbones/vgg.py)
@@ -79,12 +81,13 @@ PET
 ## Evaluation
 
 - Modify [eval.sh](eval.sh)
-  - change ```---resume``` to your local model path
+  - change ```--resume``` to your local model path
 - Run
 
 ```
 sh eval.sh
 ```
+
 
 ## Citation
 
@@ -99,6 +102,14 @@ If you find this work helpful for your research, please consider citing:
 }
 ```
 
+
+## Permission
+
+This code is for academic purposes only. Contact: Chengxin Liu (cx_liu@hust.edu.cn)
+
+
 ## Acknowlegdement
 
 We thank the authors of [DETR](https://github.com/facebookresearch/detr) and [P2PNet](https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet) for open-sourcing their work.
+
+
