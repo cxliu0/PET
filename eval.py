@@ -109,8 +109,7 @@ def main(args):
         else:
             checkpoint = torch.load(args.resume, map_location='cpu')
         model_without_ddp.load_state_dict(checkpoint['model'])        
-        if 'epoch' in checkpoint:
-            cur_epoch = checkpoint['epoch']
+        cur_epoch = checkpoint['epoch'] if 'epoch' in checkpoint else 0
     
     # evaluation
     vis_dir = None if args.vis_dir == "" else args.vis_dir
