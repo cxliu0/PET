@@ -88,6 +88,21 @@ PET
 sh eval.sh
 ```
 
+## Pretrained Models
+
+- Environment:
+```
+python==3.8
+pytorch==1.12.1
+torchvision==0.13.1
+```
+
+- Models:
+
+| Dataset                  | Model Link  | Training Log  | MAE |
+| ------------------------ | ----------- | --------------| ----|
+| ShanghaiTech PartA       |  [SHA_model.pth](https://drive.google.com/file/d/1QwV8hrEDs1LQ4h1TH4KSL8tB51AImNMT/view?usp=drive_link)   | [SHA_log.txt](https://drive.google.com/file/d/1UpY61L0KWRA9c29CM9FMX34bHyprnPUY/view?usp=sharing) | 49.08 |
+
 
 ## Citation
 
