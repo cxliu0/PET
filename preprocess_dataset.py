@@ -199,8 +199,7 @@ def process_nwpu_crowd(data_root, down_size=2048):
             new_gt_path = gt_list[img_path].replace(data_root, new_data_root)
             
             # save image
-            quality_val = 100
-            img.save(new_img_path, quality=quality_val)
+            img.save(new_img_path, quality=img_quality)
 
             # save annotation
             if split != 'test':
